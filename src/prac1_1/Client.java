@@ -10,8 +10,11 @@ public class Client {
         Socket s = new Socket("localhost", 4711);
         OutputStream os = s.getOutputStream();
         Scanner keyboardScan = new Scanner(System.in);
-        String text = keyboardScan.nextLine();
-        os.write(text.getBytes());
-        s.close();
+
+        while(true) {
+            String text = keyboardScan.nextLine();
+            text += "\r\n";
+            os.write(text.getBytes());
+        }
     }
 }

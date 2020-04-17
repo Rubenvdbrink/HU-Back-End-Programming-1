@@ -13,10 +13,8 @@ public class Server {
 
         int c = is.read();
         while (true) {
-            System.out.println((char) c);
+            System.out.print((char) c);
             c = is.read();
         }
-//        s.close();
-//        ss.close();
     }
 }
