@@ -1,4 +1,4 @@
-package prac1_1;
+package prac1_2;
 
 import java.io.IOException;
 import java.net.ServerSocket;

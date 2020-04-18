@@ -13,7 +13,7 @@ public class Client {
 
         while(true) {
             String text = keyboardScan.nextLine();
-            text += "\r\n";
+            text += "\n";
             os.write(text.getBytes());
         }
     }
